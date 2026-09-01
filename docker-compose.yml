@@ -1,0 +1,20 @@
+services:
+  mysql:
+    image: mysql:8.4
+    container_name: sih26036-mysql
+    restart: unless-stopped
+
+    environment:
+      MYSQL_DATABASE: sih26036
+      MYSQL_USER: sih_user
+      MYSQL_PASSWORD: sih_password
+      MYSQL_ROOT_PASSWORD: root_password
+
+    ports:
+      - "3307:3306"
+
+    volumes:
+      - mysql_data:/var/lib/mysql
+
+volumes:
+  mysql_data:
