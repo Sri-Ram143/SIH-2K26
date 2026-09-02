@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Register | Legal Metrology</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+
+<body class="auth-page">
+
+    <div class="auth-container">
+
+        <div class="auth-brand">
+
+            <div class="auth-logo">⚖️</div>
+
+            <h1>Legal Metrology</h1>
+
+            <p>
+                Digital Verification & Certification Portal
+            </p>
+
+            <div class="auth-info">
+
+                <p>✓ Register your organization</p>
+
+                <p>✓ Apply for instrument verification</p>
+
+                <p>✓ Manage digital certificates</p>
+
+            </div>
+
+        </div>
+
+
+        <div class="auth-form">
+
+            <h2>Create Account</h2>
+
+            <p class="form-subtitle">
+                Register as a stakeholder
+            </p>
+
+
+            <form id="registerForm" onsubmit="return false;">
+
+                <label for="name">
+                    Full Name / Organization Name
+                </label>
+
+                <input
+                    type="text"
+                    id="name"
+                    placeholder="Enter your name"
+                    required
+                >
+
+
+                <label for="email">
+                    Email Address
+                </label>
+
+                <input
+                    type="email"
+                    id="email"
+                    placeholder="Enter your email"
+                    required
+                >
+
+
+                <label for="phone">
+                    Mobile Number
+                </label>
+
+                <input
+                    type="tel"
+                    id="phone"
+                    placeholder="Enter mobile number"
+                    maxlength="10"
+                    required
+                >
+
+
+                <label for="role">
+                    Stakeholder Type
+                </label>
+
+                <select id="role" required>
+
+                    <option value="">
+                        Select stakeholder type
+                    </option>
+
+                    <option value="owner">
+                        Instrument Owner / User
+                    </option>
+
+                    <option value="lmo">
+                        Legal Metrology Officer
+                    </option>
+
+                    <option value="gatc">
+                        Government Approved Test Centre
+                    </option>
+
+                </select>
+
+
+                <label for="password">
+                    Create Password
+                </label>
+
+                <input
+                    type="password"
+                    id="password"
+                    placeholder="Create password"
+                    required
+                >
+
+
+                <label for="confirmPassword">
+                    Confirm Password
+                </label>
+
+                <input
+                    type="password"
+                    id="confirmPassword"
+                    placeholder="Confirm password"
+                    required
+                >
+
+
+                <button type="button" class="auth-btn"
+                onclick="window.location.href='dashboard.html'">
+                    Create Account
+                </button>
+
+            </form>
+
+
+            <p class="switch-form">
+
+                Already have an account?
+
+                <a href="login.html">
+                    Login
+                </a>
+
+            </p>
+
+
+            <a href="index.html" class="back-home">
+                ← Back to Home
+            </a>
+
+        </div>
+
+    </div>
+
+
+    <script src="js/app.js"></script>
+
+</body>
+
+</html>
