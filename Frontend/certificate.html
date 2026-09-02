@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Certificates | Legal Metrology</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <header class="topbar">
+        <h2>⚖️ Legal Metrology</h2>
+
+        <a href="dashboard.html">Dashboard</a>
+    </header>
+
+
+    <main class="application-page">
+
+        <h1>My Certificates</h1>
+
+        <p>
+            View your verified instrument certificates.
+        </p>
+
+
+        <div class="certificate">
+
+    <h1>LEGAL METROLOGY DEPARTMENT</h1>
+
+    <h2>VERIFICATION CERTIFICATE</h2>
+
+    <p class="certificate-number">
+        Certificate No: <strong>LM-2026-001</strong>
+    </p>
+
+    <hr>
+
+    <p>
+        This is to certify that the following weighing/measuring
+        instrument has been verified in accordance with Legal Metrology
+        regulations.
+    </p>
+
+
+    <div class="certificate-details">
+
+        <p>
+            <strong>Applicant / Organization:</strong>
+            ABC Traders
+        </p>
+
+        <p>
+            <strong>Instrument Type:</strong>
+            Electronic Weighing Scale
+        </p>
+
+        <p>
+            <strong>Serial Number:</strong>
+            WM-2025-001
+        </p>
+
+        <p>
+            <strong>Manufacturer:</strong>
+            ABC Instruments
+        </p>
+
+        <p>
+            <strong>Capacity:</strong>
+            100 kg
+        </p>
+
+        <p>
+            <strong>Location:</strong>
+            Vijayawada
+        </p>
+
+        <p>
+            <strong>Verification Date:</strong>
+            01-09-2026
+        </p>
+
+        <p>
+            <strong>Valid Until:</strong>
+            01-09-2027
+        </p>
+
+        <p>
+            <strong>Status:</strong>
+            <span class="status">VERIFIED</span>
+        </p>
+
+    </div>
+
+
+    <div class="qr-section">
+
+        <div id="qr-code">
+    
+        </div>
+
+        <p>
+            Scan QR code to verify this certificate
+        </p>
+
+    </div>
+
+
+    <div class="certificate-actions">
+
+        <button type="button"
+                class="auth-btn"
+                onclick="window.print()">
+            Print Certificate
+        </button>
+
+        <a href="dashboard.html" class="back-home">
+            ← Back to Dashboard
+        </a>
+
+    </div>
+
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+
+<script>
+    new QRCode(document.getElementById("qrcode"), {
+        text: "http://localhost:5500/verify.html?certificate=LM-2026-001",
+        width: 150,
+        height: 150
+    });
+</script>
+</body>
+
+</html>

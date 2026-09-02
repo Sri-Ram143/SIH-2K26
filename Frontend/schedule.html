@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Verification Scheduling | Legal Metrology</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+    <!-- HEADER -->
+
+    <header class="dashboard-header">
+
+        <div class="dashboard-logo">
+            ⚖️ Legal Metrology
+        </div>
+
+        <div class="user-menu">
+
+            <span>👤 Legal Metrology Officer</span>
+
+            <a href="dashboard.html">
+                Dashboard
+            </a>
+
+        </div>
+
+    </header>
+
+
+    <!-- MAIN -->
+
+    <main class="schedule-page">
+
+        <div class="schedule-heading">
+
+            <p class="small-title">
+                VERIFICATION SCHEDULING
+            </p>
+
+            <h1>Schedule Verification</h1>
+
+            <p>
+                Assign an officer or GATC and schedule
+                the verification activity.
+            </p>
+
+        </div>
+
+
+        <!-- APPLICATION DETAILS -->
+
+        <section class="schedule-card">
+
+            <h2>Application Details</h2>
+
+            <div class="details-grid">
+
+                <div>
+                    <span>Application ID</span>
+                    <strong>LM-2026-001</strong>
+                </div>
+
+                <div>
+                    <span>Applicant</span>
+                    <strong>ABC Traders</strong>
+                </div>
+
+                <div>
+                    <span>Instrument</span>
+                    <strong>Electronic Weighing Scale</strong>
+                </div>
+
+                <div>
+                    <span>Serial Number</span>
+                    <strong>EWS-458921</strong>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- SCHEDULING FORM -->
+
+        <form id="scheduleForm"
+              class="schedule-card">
+
+            <h2>Verification Assignment</h2>
+
+
+            <div class="schedule-grid">
+
+                <div>
+
+                    <label for="verificationMode">
+                        Verification Authority
+                    </label>
+
+                    <select id="verificationMode" required>
+
+                        <option value="">
+                            Select authority
+                        </option>
+
+                        <option value="lmo">
+                            Legal Metrology Officer
+                        </option>
+
+                        <option value="gatc">
+                            Government Approved Test Centre
+                        </option>
+
+                    </select>
+
+                </div>
+
+
+                <div>
+
+                    <label for="officer">
+                        Officer / GATC
+                    </label>
+
+                    <select id="officer" required>
+
+                        <option value="">
+                            Select officer / GATC
+                        </option>
+
+                        <option>
+                            LMO - Ravi Kumar
+                        </option>
+
+                        <option>
+                            LMO - Suresh Kumar
+                        </option>
+
+                        <option>
+                            GATC - Hyderabad Test Centre
+                        </option>
+
+                        <option>
+                            GATC - Vijayawada Test Centre
+                        </option>
+
+                    </select>
+
+                </div>
+
+
+                <div>
+
+                    <label for="date">
+                        Verification Date
+                    </label>
+
+                    <input
+                        type="date"
+                        id="date"
+                        required
+                    >
+
+                </div>
+
+
+                <div>
+
+                    <label for="time">
+                        Verification Time
+                    </label>
+
+                    <input
+                        type="time"
+                        id="time"
+                        required
+                    >
+
+                </div>
+
+
+                <div class="full-width">
+
+                    <label for="location">
+                        Verification Location
+                    </label>
+
+                    <input
+                        type="text"
+                        id="location"
+                        placeholder="Enter verification location"
+                        required
+                    >
+
+                </div>
+
+
+                <div class="full-width">
+
+                    <label for="remarks">
+                        Remarks
+                    </label>
+
+                    <textarea
+                        id="remarks"
+                        rows="4"
+                        placeholder="Enter additional remarks">
+                    </textarea>
+
+                </div>
+
+            </div>
+
+
+            <!-- BUTTONS -->
+
+            <div class="schedule-buttons">
+
+                <a href="dashboard.html"
+                   class="secondary-btn">
+                    Cancel
+                </a>
+
+                <button
+                    type="submit"
+                    class="auth-btn" onclick="window.location.href='certificate.html'">
+                    Confirm Schedule
+                </button>
+
+            </div>
+
+        </form>
+
+
+        <!-- STATUS -->
+
+        <section class="schedule-card">
+
+            <h2>Application Status</h2>
+
+            <div class="timeline">
+
+                <div class="timeline-item completed">
+                    <span>✓</span>
+                    <div>
+                        <strong>Application Submitted</strong>
+                        <p>28 Aug 2026</p>
+                    </div>
+                </div>
+
+
+                <div class="timeline-item active">
+                    <span>2</span>
+                    <div>
+                        <strong>Verification Scheduled</strong>
+                        <p>Waiting for confirmation</p>
+                    </div>
+                </div>
+
+
+                <div class="timeline-item">
+                    <span>3</span>
+                    <div>
+                        <strong>Instrument Verification</strong>
+                        <p>Pending</p>
+                    </div>
+                </div>
+
+
+                <div class="timeline-item">
+                    <span>4</span>
+                    <div>
+                        <strong>Certificate Generation</strong>
+                        <p>Pending</p>
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <script src="js/app.js"></script>
+    <a href="verification.html" class="back-home">
+        <-Back
+    </a>
+
+</body>
+
+</html>

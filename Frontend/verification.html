@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Field Verification | Legal Metrology</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<header class="dashboard-header">
+
+    <div class="dashboard-logo">
+        ⚖️ Legal Metrology
+    </div>
+
+    <div class="user-menu">
+        <span>👤 LMO Officer</span>
+        <a href="dashboard.html">Dashboard</a>
+    </div>
+
+</header>
+
+
+<main class="verification-page">
+
+    <div class="verification-heading">
+
+        <p class="small-title">FIELD VERIFICATION</p>
+
+        <h1>Instrument Verification</h1>
+
+        <p>
+            Record inspection observations and verification
+            results for the instrument.
+        </p>
+
+    </div>
+
+
+    <!-- APPLICATION INFORMATION -->
+
+    <section class="verification-card">
+
+        <h2>Application Information</h2>
+
+        <div class="verification-details">
+
+            <div>
+                <span>Application ID</span>
+                <strong>LM-2026-001</strong>
+            </div>
+
+            <div>
+                <span>Applicant</span>
+                <strong>ABC Traders</strong>
+            </div>
+
+            <div>
+                <span>Instrument</span>
+                <strong>Electronic Weighing Scale</strong>
+            </div>
+
+            <div>
+                <span>Serial Number</span>
+                <strong>EWS-458921</strong>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- VERIFICATION FORM -->
+
+    <form id="verificationForm">
+
+
+        <!-- INSPECTION -->
+
+        <section class="verification-card">
+
+            <h2>1. Inspection Details</h2>
+
+            <div class="verification-grid">
+
+                <div>
+
+                    <label>Instrument Condition</label>
+
+                    <select required>
+
+                        <option value="">
+                            Select condition
+                        </option>
+
+                        <option>Good</option>
+                        <option>Needs Attention</option>
+                        <option>Damaged</option>
+
+                    </select>
+
+                </div>
+
+
+                <div>
+
+                    <label>Display / Indicator</label>
+
+                    <select required>
+
+                        <option value="">
+                            Select result
+                        </option>
+
+                        <option>Working Properly</option>
+                        <option>Not Working</option>
+
+                    </select>
+
+                </div>
+
+
+                <div>
+
+                    <label>Sealing Condition</label>
+
+                    <select required>
+
+                        <option value="">
+                            Select condition
+                        </option>
+
+                        <option>Intact</option>
+                        <option>Damaged</option>
+                        <option>Missing</option>
+
+                    </select>
+
+                </div>
+
+
+                <div>
+
+                    <label>Identification Mark</label>
+
+                    <input
+                        type="text"
+                        placeholder="Enter identification mark"
+                        required
+                    >
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- TEST RESULTS -->
+
+        <section class="verification-card">
+
+            <h2>2. Test Results</h2>
+
+            <div class="verification-grid">
+
+                <div>
+
+                    <label>Test Weight</label>
+
+                    <input
+                        type="text"
+                        placeholder="Example: 10 kg"
+                        required
+                    >
+
+                </div>
+
+
+                <div>
+
+                    <label>Observed Reading</label>
+
+                    <input
+                        type="text"
+                        placeholder="Example: 10.01 kg"
+                        required
+                    >
+
+                </div>
+
+
+                <div>
+
+                    <label>Error / Variation</label>
+
+                    <input
+                        type="text"
+                        placeholder="Enter observed error"
+                        required
+                    >
+
+                </div>
+
+
+                <div>
+
+                    <label>Test Result</label>
+
+                    <select required>
+
+                        <option value="">
+                            Select result
+                        </option>
+
+                        <option>Pass</option>
+                        <option>Fail</option>
+
+                    </select>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- PHOTOGRAPH -->
+
+        <section class="verification-card">
+
+            <h2>3. Field Evidence</h2>
+
+            <label>Upload Instrument Photograph</label>
+
+            <input
+                type="file"
+                accept="image/*"
+                required
+            >
+
+            <label>Officer Remarks</label>
+
+            <textarea
+                rows="5"
+                placeholder="Enter inspection observations and remarks"
+                required>
+            </textarea>
+
+        </section>
+
+
+        <!-- FINAL DECISION -->
+
+        <section class="verification-card">
+
+            <h2>4. Final Verification Decision</h2>
+
+            <div class="decision-options">
+
+                <label>
+                    <input
+                        type="radio"
+                        name="decision"
+                        value="verified"
+                        required
+                    >
+                    ✓ Instrument Verified
+                </label>
+
+                <label>
+                    <input
+                        type="radio"
+                        name="decision"
+                        value="rejected"
+                    >
+                    ✕ Verification Failed
+                </label>
+
+            </div>
+
+        </section>
+
+
+        <!-- SUBMIT -->
+
+        <div class="verification-buttons">
+
+            <a
+                href="dashboard.html"
+                class="secondary-btn">
+                Cancel
+            </a>
+
+            <button
+                type="button"
+                class="auth-btn" onclick="window.location.href='schedule.html'">
+                continue
+            </button>
+
+        </div>
+
+    </form>
+
+</main>
+
+
+<script src="js/app.js"></script>
+<a href="application.html" class="back-home">
+    <-Back
+</a>
+     
+</body>
+
+</html>
