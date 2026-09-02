@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Verification Application | Legal Metrology</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+    <!-- HEADER -->
+
+    <header class="dashboard-header">
+
+        <div class="dashboard-logo">
+            ⚖️ Legal Metrology
+        </div>
+
+        <div class="user-menu">
+            <span>👤 Instrument Owner</span>
+            <a href="dashboard.html">Dashboard</a>
+        </div>
+
+    </header>
+
+
+    <!-- MAIN -->
+
+    <main class="application-page">
+
+        <div class="application-heading">
+
+            <p class="small-title">
+                VERIFICATION APPLICATION
+            </p>
+
+            <h1>Apply for Instrument Verification</h1>
+
+            <p>
+                Enter the details of the weighing or measuring
+                instrument for verification.
+            </p>
+
+        </div>
+
+
+        <!-- APPLICATION FORM -->
+
+        <form id="applicationForm"
+              class="application-form">
+
+
+            <!-- OWNER DETAILS -->
+
+            <div class="form-section">
+
+                <h2>1. Applicant Details</h2>
+
+                <div class="form-grid">
+
+                    <div>
+                        <label>Applicant Name</label>
+
+                        <input
+                            type="text"
+                            placeholder="Enter applicant name"
+                            required
+                        >
+                    </div>
+
+
+                    <div>
+                        <label>Mobile Number</label>
+
+                        <input
+                            type="tel"
+                            placeholder="Enter mobile number"
+                            maxlength="10"
+                            required
+                        >
+                    </div>
+
+
+                    <div>
+                        <label>Email Address</label>
+
+                        <input
+                            type="email"
+                            placeholder="Enter email"
+                            required
+                        >
+                    </div>
+
+
+                    <div>
+                        <label>Business / Organization Name</label>
+
+                        <input
+                            type="text"
+                            placeholder="Enter organization name"
+                        >
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- INSTRUMENT DETAILS -->
+
+            <div class="form-section">
+
+                <h2>2. Instrument Details</h2>
+
+                <div class="form-grid">
+
+                    <div>
+
+                        <label>Instrument Type</label>
+
+                        <select required>
+
+                            <option value="">
+                                Select instrument type
+                            </option>
+
+                            <option>
+                                Electronic Weighing Scale
+                            </option>
+
+                            <option>
+                                Platform Weighing Scale
+                            </option>
+
+                            <option>
+                                Weighbridge
+                            </option>
+
+                            <option>
+                                Digital Measuring Instrument
+                            </option>
+
+                            <option>
+                                Length Measuring Instrument
+                            </option>
+
+                            <option>
+                                Other
+                            </option>
+
+                        </select>
+
+                    </div>
+
+
+                    <div>
+
+                        <label>Manufacturer</label>
+
+                        <input
+                            type="text"
+                            placeholder="Enter manufacturer"
+                            required
+                        >
+
+                    </div>
+
+
+                    <div>
+
+                        <label>Model Number</label>
+
+                        <input
+                            type="text"
+                            placeholder="Enter model number"
+                            required
+                        >
+
+                    </div>
+
+
+                    <div>
+
+                        <label>Serial Number</label>
+
+                        <input
+                            type="text"
+                            placeholder="Enter serial number"
+                            required
+                        >
+
+                    </div>
+
+
+                    <div>
+
+                        <label>Capacity</label>
+
+                        <input
+                            type="text"
+                            placeholder="Example: 100 kg"
+                            required
+                        >
+
+                    </div>
+
+
+                    <div>
+
+                        <label>Instrument Location</label>
+
+                        <input
+                            type="text"
+                            placeholder="Enter instrument location"
+                            required
+                        >
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- APPLICATION TYPE -->
+
+            <div class="form-section">
+
+                <h2>3. Verification Type</h2>
+
+                <div class="verification-options">
+
+                    <label>
+                        <input
+                            type="radio"
+                            name="verificationType"
+                            value="new"
+                            required
+                        >
+                        New Verification
+                    </label>
+
+
+                    <label>
+                        <input
+                            type="radio"
+                            name="verificationType"
+                            value="reverification"
+                        >
+                        Re-verification
+                    </label>
+
+                </div>
+
+            </div>
+
+
+            <!-- DOCUMENTS -->
+
+            <div class="form-section">
+
+                <h2>4. Supporting Documents</h2>
+
+                <label>
+                    Upload Instrument Photograph
+                </label>
+
+                <input
+                    type="file"
+                    accept="image/*"
+                >
+
+
+                <label>
+                    Upload Supporting Document
+                </label>
+
+                <input
+                    type="file"
+                    accept=".pdf,.jpg,.jpeg,.png"
+                >
+
+            </div>
+
+
+            <!-- DECLARATION -->
+
+            <div class="form-section">
+
+                <h2>5. Declaration</h2>
+
+                <label class="declaration">
+
+                    <input
+                        type="checkbox"
+                        required
+                    >
+
+                    I confirm that the information provided
+                    above is correct.
+
+                </label>
+
+            </div>
+
+
+            <!-- BUTTONS -->
+
+            <div class="form-buttons">
+
+                <a href="dashboard.html"
+                   class="secondary-btn">
+                    Cancel
+                </a>
+
+                <button
+                    type="button"
+                    class="auth-btn" onclick="window.location.href='verification.html'">
+                    Submit Application
+                </button>
+
+            </div>
+
+        </form>
+
+    </main>
+
+
+    <script src="js/app.js"></script>
+    <a href="dashboard.html" class="back-home">
+        <-Back to Dashboard
+    </a>
+
+</body>
+
+</html>

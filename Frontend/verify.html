@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Verify Certificate | Legal Metrology</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <header class="topbar">
+        <h2>⚖️ Legal Metrology</h2>
+
+        <a href="dashboard.html">Dashboard</a>
+    </header>
+
+
+    <main class="application-page">
+
+        <h1>Verify Certificate</h1>
+
+        <p>
+            Enter the certificate number to verify a certificate.
+        </p>
+
+        <h2>Scan Certificate QR Code</h2>
+
+        <div id="qrcode"></div>
+
+        <p>Scan the QR code from a certificate to verify it.</p>
+        <form id="verifyForm">
+
+            <label for="certificateNumber">
+                Certificate Number
+           </label>
+
+            <input
+                type="text"
+                id="certificateNumber"
+                placeholder="Example: LM-2026-001"
+                required
+            >
+
+            <button type="submit" class="auth-btn">
+                Verify Certificate
+            </button>
+
+        </form>
+
+
+        <div id="result"></div>
+
+
+        <br>
+
+        <a href="dashboard.html">
+            ← Back to Dashboard
+        </a>
+
+    </main>
+
+
+    <script>
+
+        document.getElementById("verifyForm")
+        .addEventListener("submit", function(event) {
+
+            event.preventDefault();
+
+            const number =
+                document.getElementById("certificateNumber").value;
+
+            if (number === "LM-2026-001") {
+
+                document.getElementById("result").innerHTML =
+                    "<h2>✓ Certificate Verified</h2>" +
+                    "<p>Certificate Number: LM-2026-001</p>" +
+                    "<p>Status: Valid</p>" +
+                    "<p>Instrument: Electronic Weighing Scale</p>";
+
+            } else {
+
+                document.getElementById("result").innerHTML =
+                    "<h2>Certificate Not Found</h2>" +
+                    "<p>Please check the certificate number.</p>";
+
+            }
+
+        });
+
+    </script>
+<script>
+    const params = new URLSearchParams(window.location.search);
+
+    const certificate =
+        params.get("certificate");
+
+    if (certificate) {
+
+        document.getElementById("certificateNumber").value =
+            certificate;
+
+    }
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+
+<script>
+    new QRCode(document.getElementById("qrcode"), {
+        text: "LM-2026-001",
+        width: 150,
+        height: 150
+    });
+</script>
+</body>
+
+</html>
+
+    

@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Dashboard | Legal Metrology</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header class="dashboard-header">
+
+        <div class="dashboard-logo">
+            ⚖️ Legal Metrology
+        </div>
+
+        <div class="user-menu">
+            <span>👤 Instrument Owner</span>
+            <a href="index.html">Logout</a>
+        </div>
+
+    </header>
+
+
+    <!-- DASHBOARD -->
+    <main class="dashboard">
+
+        <div class="dashboard-title">
+
+            <div>
+                <p class="small-title">USER DASHBOARD</p>
+
+                <h1>Welcome to your Dashboard</h1>
+
+                <p>
+                    Manage your weighing and measuring instruments,
+                    verification applications and certificates.
+                </p>
+            </div>
+
+            <a href="application.html" class="primary-btn">
+                + New Verification
+            </a>
+
+        </div>
+
+
+        <!-- STATISTICS -->
+
+        <section class="stats">
+
+            <div class="stat-card">
+                <div class="stat-icon">⚖️</div>
+
+                <div>
+                    <h2>4</h2>
+                    <p>Registered Instruments</p>
+                </div>
+            </div>
+
+
+            <div class="stat-card">
+                <div class="stat-icon">📋</div>
+
+                <div>
+                    <h2>2</h2>
+                    <p>Pending Applications</p>
+                </div>
+            </div>
+
+
+            <div class="stat-card">
+                <div class="stat-icon">✓</div>
+
+                <div>
+                    <h2>8</h2>
+                    <p>Verified Instruments</p>
+                </div>
+            </div>
+
+
+            <div class="stat-card">
+                <div class="stat-icon">📅</div>
+
+                <div>
+                    <h2>1</h2>
+                    <p>Expiring Soon</p>
+                </div>
+            </div>
+
+        </section>
+
+
+        <!-- QUICK ACTIONS -->
+
+        <section class="dashboard-section">
+
+            <h2>Quick Actions</h2>
+
+            <div class="quick-actions">
+
+                <a href="application.html" class="action-card">
+                    <span>📝</span>
+                    <h3>Apply for Verification</h3>
+                    <p>Submit a new verification application.</p>
+                </a>
+
+
+                <a href="instruments.html" class="action-card">
+                    <span>⚖️</span>
+                    <h3>My Instruments</h3>
+                    <p>View your registered instruments.</p>
+                </a>
+
+
+                <a href="certificate.html" class="action-card">
+                    <span>📜</span>
+                    <h3>Certificates</h3>
+                    <p>View and download certificates.</p>
+                </a>
+
+
+                <a href="verify.html" class="action-card">
+                    <span>🔍</span>
+                    <h3>Verify Certificate</h3>
+                    <p>Check a certificate using QR code.</p>
+                </a>
+
+            </div>
+
+        </section>
+
+
+        <!-- APPLICATION STATUS -->
+
+        <section class="dashboard-section">
+
+            <h2>Recent Applications</h2>
+
+            <div class="table-container">
+
+                <table>
+
+                    <thead>
+
+                        <tr>
+                            <th>Application ID</th>
+                            <th>Instrument</th>
+                            <th>Application Date</th>
+                            <th>Status</th>
+                        </tr>
+
+                    </thead>
+
+
+                    <tbody>
+
+                        <tr>
+                            <td>LM-2026-001</td>
+                            <td>Electronic Weighing Scale</td>
+                            <td>28 Aug 2026</td>
+                            <td>
+                                <span class="status pending">
+                                    Pending
+                                </span>
+                            </td>
+                        </tr>
+
+
+                        <tr>
+                            <td>LM-2026-002</td>
+                            <td>Digital Measuring Instrument</td>
+                            <td>25 Aug 2026</td>
+                            <td>
+                                <span class="status verified">
+                                    Verified
+                                </span>
+                            </td>
+                        </tr>
+
+
+                        <tr>
+                            <td>LM-2026-003</td>
+                            <td>Platform Weighing Scale</td>
+                            <td>20 Aug 2026</td>
+                            <td>
+                                <span class="status scheduled">
+                                    Scheduled
+                                </span>
+                            </td>
+                        </tr>
+
+                    </tbody>
+
+                </table>
+
+            </div>
+
+        </section>
+
+    </main>
+
+</body>
+
+</html>
